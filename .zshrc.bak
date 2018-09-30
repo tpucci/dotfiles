@@ -1,0 +1,149 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/thomaspucci/.oh-my-zsh
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+. "/usr/local/etc/profile.d/z.sh"
+
+export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/platform-tools
+export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/tools
+export ANDROID_HOME=/Users/thomaspucci/Library/Android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+function emulator { ( cd "$(dirname "$(whence -p emulator)")" && ./emulator "$@"; ) }
+
+
+# Aliases
+alias yt="yarn test"
+alias yj="yarn jest --watch --collectCoverage=false"
+alias yju="yarn jest --u"
+alias yf="yarn flow"
+alias yl="yarn eslint ."
+alias rn="react-native"
+alias rna="react-native run-android"
+alias rni="react-native run-ios"
+alias ad="adb devices"
+alias emu23="emulator -avd Nexus_5X_API_23 &"
+alias emu="emulator -avd Nexus_6_API_26_1 &"
+alias pip="pip2.7"
+alias dc="docker-compose"
+alias nvimrc="nvim ~/.config/nvim/init.vim"
+alias nvimzshrc="nvim ~/.zshrc"
+
+# Open a PR on Github with GPR
+gpr() {
+  TITLE=${1}
+  MESSAGE=$(echo $TITLE'\n' | cat - ./PULL_REQUEST_TEMPLATE.md)
+  hub pull-request -m "${MESSAGE}" -b ${2} --browse
+}
+
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+# base16_monokai
+# source ~/.vim_runtime/misc/base16-fzf/bash/base16-monokai.config
+
+# For fastlane
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export FASTLANE_HIDE_CHANGELOG=true
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME=""
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git auto-suggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+antibody bundle < ~/.zsh_plugins.txt
+
+source <(antibody init)
+
+fpath=( "$HOME/.zfunctions" $fpath )
+
+autoload -U promptinit; promptinit
+prompt pure
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source $HOME/.rvm/scripts/rvm
