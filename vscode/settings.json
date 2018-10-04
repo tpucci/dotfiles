@@ -20,4 +20,7 @@
   "workbench.editor.showTabs": true,
   "vim.disableExtension": true,
   "vim.enableNeovim": true,
+  "editor.snippetSuggestions": "top",
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0
 }
