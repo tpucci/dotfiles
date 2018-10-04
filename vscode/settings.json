@@ -1,0 +1,23 @@
+{
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "workbench.iconTheme": "vscode-icons",
+  "files.associations": {
+    "Fastfile": "ruby"
+  },
+  "workbench.colorTheme": "Default Light+",
+  "extensions.ignoreRecommendations": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 0,
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": false,
+  "javascript.format.enable": true,
+  "workbench.sideBar.location": "left",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.showTabs": true,
+  "vim.disableExtension": true,
+  "vim.enableNeovim": true,
+}

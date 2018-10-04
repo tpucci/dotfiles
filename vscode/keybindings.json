@@ -1,0 +1,131 @@
+[
+  {
+    "key": "cmd+t up",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "cmd+t down",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "alt+cmd+[Period]",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+k shift+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "cmd+k n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView"
+  },
+  {
+    "key": "cmd+m",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+l",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "extension.jumpy-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "extension.jumpy-line",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "enter",
+    "command": "extension.jumpy-exit",
+    "when": "editorTextFocus && jumpy.isJumpyMode"
+  },
+  {
+    "key": "ctrl+alt+cmd+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+cmd+left",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "alt+cmd+h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "alt+cmd+l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "cmd+k cmd+up",
+    "command": "-workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "cmd+k cmd+down",
+    "command": "-workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+alt+cmd+l",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+alt+cmd+k",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    "key": "ctrl+alt+cmd+j",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+alt+cmd+h",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "cmd+k k",
+    "command": "toggleVim"
+  },
+  {
+    "key": "shift+cmd+0",
+    "command": "workbench.action.zoomReset"
+  },
+  {
+    "key": "cmd+numpad0",
+    "command": "-workbench.action.zoomReset"
+  }
+]
