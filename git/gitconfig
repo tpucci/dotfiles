@@ -1,0 +1,33 @@
+[user]
+	name = Thomas Pucci
+	email = thomas.lb.pucci@gmail.com
+[alias]
+	a = add -p -A
+	co = checkout
+	br = branch
+	ci = "commit -m"
+	st = status
+	s = status -s
+	ca = commit --amend --no-edit
+	unstage = reset HEAD
+	wip = commit -m ':construction: WIP'
+  bk = reset HEAD~1
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(dim white)(%an)%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
+  bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
+  hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
+[push]
+	default = current
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[pager]
+	branch = false
+[core]
+	editor = nvim
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[github]
+    user = tpucci
