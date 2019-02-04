@@ -1,6 +1,7 @@
 
 # Open a PR on Github with GPR
 gpr() {
+  cd $(git rev-parse --show-toplevel)
   TITLE=${1}
   MESSAGE=$(echo $TITLE'\n' | cat - ./PULL_REQUEST_TEMPLATE.md)
   hub pull-request -m "${MESSAGE}" -b ${2} --browse
@@ -27,4 +28,9 @@ unwip() {
 md(){
   mkdir "$1"
   cd "$1"
+}
+
+# gb <branch-name> - Create a new branch and check it out
+gb(){
+  git co -b $1
 }

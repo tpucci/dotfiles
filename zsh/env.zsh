@@ -21,6 +21,7 @@ export FASTLANE_HIDE_CHANGELOG=true # Fastlane config
 # Path
 export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/platform-tools # Android
 export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/tools # Android
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=$PATH:/Users/thomaspucci/Library/Flutter/bin # Flutter
+export PATH="$PATH:$HOME/.rvm/bin" #RVM
 
 typeset -U PATH # Remove duplicates in $PATH

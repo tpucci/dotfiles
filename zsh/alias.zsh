@@ -1,6 +1,6 @@
 # Aliases
 alias yt="yarn test"
-alias yj="yarn jest --watch --collectCoverage=false"
+alias yj="yarn jest --watch"
 alias yju="yarn jest --u"
 alias yf="yarn flow"
 alias yl="yarn eslint ."

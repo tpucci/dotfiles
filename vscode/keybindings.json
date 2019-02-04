@@ -20,6 +20,11 @@
     "command": "explorer.newFile"
   },
   {
+    "key": "shift+cmd+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
     "key": "cmd+k e",
     "command": "workbench.files.action.focusFilesExplorer"
   },
@@ -125,7 +130,15 @@
     "command": "workbench.action.zoomReset"
   },
   {
-    "key": "cmd+numpad0",
-    "command": "-workbench.action.zoomReset"
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "cmd+k m",
+    "command": "workbench.action.toggleCenteredLayout"
   }
 ]

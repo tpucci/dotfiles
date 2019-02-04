@@ -16,3 +16,4 @@ SAVEHIST=10000 # Number of history entries to save to disk
 HISTFILE=~/.zsh_history # Where to save history to disk
 HISTDUP=erase # Erase duplicates in the history file
 setopt hist_ignore_dups # Ignore duplicates
+

@@ -22,5 +22,17 @@
   "vim.enableNeovim": true,
   "editor.snippetSuggestions": "top",
   "editor.minimap.enabled": false,
-  "explorer.openEditors.visible": 0
+  "explorer.openEditors.visible": 0,
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.toolBarLocation": "docked",
+  "breadcrumbs.enabled": true,
+  "git.autofetch": true,
+  "gitlens.hovers.currentLine.enabled": false,
+  "cSpell.showStatus": false,
+  "gitblame.statusBarMessageFormat": "${author.name} ( ${time.ago} )",
+  "debug.showInStatusBar": "never",
+  "workbench.activityBar.visible": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.renderControlCharacters": false,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
