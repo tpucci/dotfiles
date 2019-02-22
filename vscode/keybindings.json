@@ -43,21 +43,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+enter",
-    "command": "extension.jumpy-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "extension.jumpy-line",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "enter",
-    "command": "extension.jumpy-exit",
-    "when": "editorTextFocus && jumpy.isJumpyMode"
-  },
-  {
     "key": "ctrl+alt+cmd+right",
     "command": "workbench.action.moveEditorToNextGroup"
   },
@@ -140,5 +125,34 @@
   {
     "key": "cmd+k m",
     "command": "workbench.action.toggleCenteredLayout"
+  },
+  {
+    "key": "cmd+t t",
+    "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+cmd+[Period]",
+    "command": "workbench.action.terminal.split"
+  },
+  {
+    "key": "cmd+g c",
+    "command": "git.checkout"
+  },
+  {
+    "key": "cmd+g p",
+    "command": "git.pull"
+  },
+  {
+    "key": "cmd+g shift+p",
+    "command": "git.push"
+  },
+  {
+    "key": "cmd+g b",
+    "command": "git.branch"
   }
 ]

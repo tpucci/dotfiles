@@ -5,7 +5,6 @@
   "files.associations": {
     "Fastfile": "ruby"
   },
-  "workbench.colorTheme": "Default Light+",
   "extensions.ignoreRecommendations": false,
   "editor.fontFamily": "Fira Code",
   "editor.formatOnSave": true,
@@ -28,11 +27,17 @@
   "breadcrumbs.enabled": true,
   "git.autofetch": true,
   "gitlens.hovers.currentLine.enabled": false,
-  "cSpell.showStatus": false,
   "gitblame.statusBarMessageFormat": "${author.name} ( ${time.ago} )",
   "debug.showInStatusBar": "never",
   "workbench.activityBar.visible": false,
   "diffEditor.ignoreTrimWhitespace": true,
   "editor.renderControlCharacters": false,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "workbench.panel.defaultLocation": "right",
+  "terminal.integrated.enableBell": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.copyOnSelection": true,
+  "workbench.colorTheme": "Default Light+"
 }
