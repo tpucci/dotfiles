@@ -1,7 +1,6 @@
 {
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
-  "workbench.iconTheme": "vscode-icons",
   "files.associations": {
     "Fastfile": "ruby"
   },
@@ -39,5 +38,15 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.explorerKind": "external",
   "terminal.integrated.copyOnSelection": true,
+  "zenMode.fullScreen": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "editor.gotoLocation.multiple": "goto",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Default Light+"
 }

@@ -47,12 +47,12 @@
     "command": "workbench.action.moveEditorToNextGroup"
   },
   {
-    "key": "ctrl+cmd+right",
-    "command": "-workbench.action.moveEditorToNextGroup"
-  },
-  {
     "key": "ctrl+alt+cmd+left",
     "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
   },
   {
     "key": "ctrl+cmd+left",

@@ -23,5 +23,7 @@ export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/platform-tools # Androi
 export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/tools # Android
 export PATH=$PATH:/Users/thomaspucci/Library/Flutter/bin # Flutter
 export PATH="$PATH:$HOME/.rvm/bin" #RVM
+export PATH="$PATH:$HOME/.git-stack/bin" # Git-Stack
+export PATH="$PATH:$HOME/.ngrok/bin" # ngrok
 
 typeset -U PATH # Remove duplicates in $PATH

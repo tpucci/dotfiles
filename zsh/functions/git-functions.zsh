@@ -4,7 +4,7 @@ gpr() {
   cd $(git rev-parse --show-toplevel)
   TITLE=${1}
   MESSAGE=$(echo $TITLE'\n' | cat - ./PULL_REQUEST_TEMPLATE.md)
-  hub pull-request -m "${MESSAGE}" -b ${2} --browse
+  hub pull-request -m "${MESSAGE}" -b ${2:-"master"} --browse
 }
 
 # Cd to root dir of git project

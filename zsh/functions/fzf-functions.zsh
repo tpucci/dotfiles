@@ -42,18 +42,8 @@ fb() {
   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
 
-# fshow - git commit browser
-fg() {
-  git log --graph --color=always \
-      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
-  fzf --ansi --reverse --tiebreak=index \
-      --bind "ctrl-m:execute:
-                (grep -o '[a-f0-9]\{7\}' | head -1 |
-                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
-                {}
-                FZF-EOF
-              "
-}
+# fg - Commit explorer
+alias fg="git-stack"
 
 # fh - Repeat history, assumes zsh
 fh() {
@@ -65,3 +55,10 @@ fr() {
   git log --graph --color=always --format="%h%C(#ff69b4)%d%C(reset) %s" "$@" | fzf --ansi --reverse --tiebreak=index | grep -o '[a-f0-9]\{7\}' | awk '{print $1"^"}' | xargs git rebase -i
 }
 
+#fy - get yarn commands
+fy() {
+  local yarn_commands yarn_command
+  yarn_commands=$(cat package.json | jq -r '.scripts' | sed -e 's/  "\(.*\)":\s*\(.*\)$/\1|\2/' | sed -e '1d;$d' | column -t -c 2 -s '|') &&
+  yarn_command=$(echo "$yarn_commands" | fzf --reverse --ansi) &&
+  yarn $(echo $yarn_command | awk '{print $1}')
+}
