@@ -20,6 +20,8 @@
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
     # Git
     ~/.gitconfig: git/gitconfig
+    # My Touch Bar My Rules
+    ~/Library/Application Support/MTMR/items.json: mtmr/items.json
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
