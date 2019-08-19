@@ -14,3 +14,5 @@ alias nvimrc="nvim ~/.config/nvim/init.vim"
 alias nvimzshrc="nvim ~/.zshrc"
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias gti=git
+alias android="open -a /Applications/Android\ Studio.app"

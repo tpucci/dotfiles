@@ -154,5 +154,17 @@
   {
     "key": "cmd+g b",
     "command": "git.branch"
+  },
+  {
+    "key": "cmd+k shift+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "cmd+k -",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.toggleMaximizedPanel"
   }
 ]
