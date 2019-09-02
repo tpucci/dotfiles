@@ -12,21 +12,8 @@
   {
     "type": "pomodoro",
     "width": 86,
-    "bordered": false
-  },
-  {
-    "type": "pomodoro",
-    "width": 86,
     "bordered": false,
-    "workTime": 180,
-    "restTime": 0
-  },
-  {
-    "type": "pomodoro",
-    "width": 86,
-    "bordered": false,
-    "workTime": 240,
-    "restTime": 0
+    "restTime": 300
   },
 
   // Spotify
