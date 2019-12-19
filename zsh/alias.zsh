@@ -7,7 +7,7 @@ alias yl="yarn eslint ."
 alias rn="react-native"
 alias rna="react-native run-android"
 alias rni='react-native run-ios --simulator="iPhone SE"'
-alias ad="adb devices"
+alias ad="adb devices -l"
 alias emu23="emulator -avd Nexus_5X_API_23 &"
 alias emu="emulator -avd Nexus_6_API_26_1 &"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
@@ -16,3 +16,5 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias gti=git
 alias android="open -a /Applications/Android\ Studio.app"
+alias ...="cd ../.."
+alias ....="cd ../../.."

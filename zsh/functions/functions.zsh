@@ -15,7 +15,5 @@ md(){
 
 # React Native Android reload
 ar(){
-  adb shell input keyevent KEYCODE_MENU
-  adb shell input keyevent ENTER
-  adb shell input keyevent ENTER
+  adb shell input keyevent 82
 }

@@ -97,3 +97,7 @@ fca() {
   git commit --fixup $COMMIT
   GIT_SEQUENCE_EDITOR=: git rebase --autosquash -i $COMMIT^
 }
+
+fdock() {
+  docker ps | awk 'NR>1' | fzf | awk '{print $1}' | xargs -o -J {} docker exec -it {} bash
+}

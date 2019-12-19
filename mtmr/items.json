@@ -9,12 +9,6 @@
     "align": "left",
     "bordered": true
   },
-  {
-    "type": "pomodoro",
-    "width": 86,
-    "bordered": false,
-    "restTime": 300
-  },
 
   // Spotify
   {

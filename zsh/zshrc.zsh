@@ -9,6 +9,4 @@ source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/private.zsh
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
