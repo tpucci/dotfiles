@@ -166,5 +166,15 @@
   {
     "key": "shift+cmd+j",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+g cmd+c",
+    "command": "gitlens.showCommitSearch",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "shift+alt+[Period]",
+    "command": "-gitlens.showCommitSearch",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
   }
 ]
