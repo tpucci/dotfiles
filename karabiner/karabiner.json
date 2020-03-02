@@ -53,6 +53,26 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "v3 Change control_left + return key to fn + return.",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["left_shift"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_forward"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },

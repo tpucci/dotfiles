@@ -6,6 +6,7 @@ source ~/.dotfiles/zsh/options.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf-functions.zsh
 source ~/.dotfiles/zsh/functions/git-functions.zsh
+source ~/.dotfiles/zsh/functions/fzf-docker-kubetcl.zsh
 source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/private.zsh
 

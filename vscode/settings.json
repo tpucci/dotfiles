@@ -53,5 +53,8 @@
   "gitlens.codeLens.enabled": false,
   "vsicons.dontShowNewVersionMessage": true,
   "liveshare.featureSet": "insiders",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

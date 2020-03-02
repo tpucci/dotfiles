@@ -28,6 +28,7 @@
 	branch = false
 [core]
 	editor = nvim
+	autocrlf = input
 [github]
     user = tpucci
 [color "diff-highlight"]

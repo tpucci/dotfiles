@@ -60,9 +60,6 @@ fb() {
   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
 
-# fg - Commit explorer
-alias fg="git-stack"
-
 # fh - Repeat history, assumes zsh
 fh() {
   print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
@@ -98,10 +95,21 @@ fca() {
   GIT_SEQUENCE_EDITOR=: git rebase --autosquash -i $COMMIT\^
 }
 
-fdock() {
-  docker ps | awk 'NR>1' | fzf | awk '{print $1}' | xargs -o -J {} docker exec -it {} bash
-}
+# make - get make commands
+_fzf_complete_make() {
+  # Get all make commands
+  MAKE_COMMANDS=$(grep '^[^#[:space:]].*:' Makefile)
 
-fdocksh() {
-  docker ps | awk 'NR>1' | fzf | awk '{print $1}' | xargs -o -J {} docker exec -it {} sh
+  ARGS="$@"
+  if [[ $ARGS = 'make ' ]]; then
+    _fzf_complete "--reverse -n 1 --height=80%" "$@" < <(
+      echo $MAKE_COMMANDS
+    )
+  fi
 }
+_fzf_complete_make_post() {
+  # Post-process the fzf output to keep only the command name and not the explanation with it
+  awk '{print $1}'
+}
+[ -n "$BASH" ] && complete -F _fzf_complete_make -o default -o bashdefault make
+
