@@ -18,3 +18,4 @@ alias gti=git
 alias android="open -a /Applications/Android\ Studio.app"
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias ngrok="~/.dotfiles/bin/ngrok http -region=eu 80"

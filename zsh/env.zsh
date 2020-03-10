@@ -25,6 +25,7 @@ export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/tools # Android
 export PATH=$PATH:/Users/thomaspucci/Library/Flutter/bin # Flutter
 export PATH="$PATH:$HOME/.rvm/bin" #RVM
 export PATH="$PATH:$HOME/.ngrok/bin" # ngrok
+export PATH="$PATH:$HOME/.dotfiles/bin/phabricator/arcanist/bin" # phabricator
 export PATH="$PATH:$HOME/Library/terraform/bin" # terraform
 export PATH="$PATH:$HOME/Library/Python/3.7/bin" # python
 

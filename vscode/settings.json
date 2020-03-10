@@ -19,7 +19,8 @@
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
-    "Fastfile": "ruby"
+    "Fastfile": "ruby",
+    ".arclint": "json"
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,

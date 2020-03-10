@@ -4,7 +4,7 @@ Tarrasch/zsh-bd
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions branch:develop
 junegunn/fzf
-sindresorhus/pure
+romkatv/powerlevel10k
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-syntax-highlighting
 spwhitt/nix-zsh-completions
