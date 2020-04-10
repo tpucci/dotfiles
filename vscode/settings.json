@@ -40,7 +40,7 @@
   "vim.disableExtension": true,
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 2,
   "workbench.activityBar.visible": false, // hide left icons
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
@@ -57,5 +57,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
