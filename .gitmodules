@@ -1,3 +1,12 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "arcanist"]
+	path = bin/phabricator/arcanist
+	url = https://github.com/phacility/arcanist
+[submodule "arcanist-elixir-support"]
+	path = bin/phabricator/arcanist-elixir-support
+	url = https://github.com/tolbrino/arcanist-elixir-support
+[submodule "libphutil"]
+	path = bin/phabricator/libphutil
+	url = https://github.com/phacility/libphutil
