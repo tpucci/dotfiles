@@ -22,6 +22,13 @@
     ~/.gitconfig: git/gitconfig
     # My Touch Bar My Rules
     ~/Library/Application Support/MTMR/items.json: mtmr/items.json
+    # XCode
+    ~/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings: xcode/Default.idekeybindings
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - command: ./xcode/replaceIDETextKeyBindingSetPlist.sh
+      stdin: true
+      stdout: true
+      description: Replacing XCode's IDETextKeyBindingSet.plist
+      quiet: true

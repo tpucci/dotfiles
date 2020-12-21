@@ -176,5 +176,15 @@
     "key": "shift+alt+[Period]",
     "command": "-gitlens.showCommitSearch",
     "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "alt+c",
+    "command": "-gitlens.showQuickCommitFileDetails",
+    "when": "editorTextFocus && gitlens:enabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "shift+alt+'",
+    "command": "gitlens.showQuickCommitFileDetails",
+    "when": "editorTextFocus && gitlens:enabled && config.gitlens.keymap == 'alternate'"
   }
 ]

@@ -136,17 +136,8 @@
     "mod": "mod1",
     "key": "r"
   },
-  "floating": [
-    "",
-    "com.google.android.studio",
-    "com.genymobile.genymotion",
-    "com.apple.finder",
-    "com.atlassian.trello",
-    "com.apple.systemprefereneces",
-    "com.apple.appstore",
-    "com.kapeli.dashdoc"
-  ],
-  "floating-is-blacklist": true,
+  "floating": ["com.vivaldi.Vivaldi", "com.google.Chrome"],
+  "floating-is-blacklist": false,
   "float-small-windows": true,
   "mouse-follows-focus": false,
   "focus-follows-mouse": false,
@@ -160,5 +151,12 @@
   "ignore-menu-bar": false,
   "use-canary-build": false,
   "new-windows-to-main": false,
-  "send-crash-reports": false
+  "follow-space-thrown-windows": true,
+  "send-crash-reports": false,
+  "screen-padding-top": 0,
+  "screen-padding-bottom": 0,
+  "screen-padding-left": 0,
+  "screen-padding-right": 0,
+  "debug-layout-info": false,
+  "restore-layouts-on-launch": true
 }

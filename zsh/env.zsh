@@ -4,11 +4,9 @@
 export EDITOR='nvim'
 export SUDO_EDITOR='nvim'
 
-# fnm
-eval "`fnm env --multi --use-on-cd`"
-
 export ANDROID_HOME=/Users/thomaspucci/Library/Android/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
+export ANDROID_NDK=/Users/thomaspucci/Library/Android/sdk/ndk/21.1.6352462
 
 export BASE16_SHELL="$HOME/.config/base16-shell/" # Base 16
 [ -n "$PS1" ] && \
@@ -20,14 +18,22 @@ export LANG=en_US.UTF-8 # Fastlane config
 export FASTLANE_HIDE_CHANGELOG=true # Fastlane config
 
 # Path
-export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/platform-tools # Android
-export PATH=$PATH:/Users/thomaspucci/Library/Android/sdk/tools # Android
-export PATH=$PATH:/Users/thomaspucci/Library/Flutter/bin # Flutter
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools" # Android
+export PATH="$PATH:$HOME/Library/Android/sdk/tools" # Android
+export PATH="$PATH:$HOME/Library/Flutter/bin" # Flutter
 export PATH="$PATH:$HOME/.rvm/bin" #RVM
 export PATH="$PATH:$HOME/.ngrok/bin" # ngrok
 export PATH="$PATH:$HOME/.dotfiles/bin/phabricator/arcanist/bin" # phabricator
 export PATH="$PATH:$HOME/Library/terraform/bin" # terraform
 export PATH="$PATH:$HOME/Library/Python/3.7/bin" # python
+export PATH="$PATH:$HOME/.jenv/bin" # jenv
+export PATH="$PATH:/Library/TeX/texbin" # LaTeX
+
+# jenv
+eval "$(jenv init -)"
+
+# fnm
+eval "`fnm env --multi --use-on-cd`"
 
 typeset -U PATH # Remove duplicates in $PATH
 
