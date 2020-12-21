@@ -301,7 +301,7 @@
         <string>selectLine:, copy:, moveToEndOfLine:, insertNewline:, paste:, deleteBackward:</string>
         <key>Insert New Line Below Current Line</key>
         <string>moveToEndOfLine:, insertNewline:</string>
-        <key>Delete Current Line</key>
+        <key>Cut Current Line</key>
         <string>selectLine:, cut:</string>
     </dict>
 </dict>
