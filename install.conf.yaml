@@ -27,8 +27,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - command: ./xcode/replaceIDETextKeyBindingSetPlist.sh
-      stdin: true
-      stdout: true
-      description: Replacing XCode's IDETextKeyBindingSet.plist
-      quiet: true
+    - [
+        ./xcode/replaceIDETextKeyBindingSetPlist.sh,
+        "Replacing XCode's IDETextKeyBindingSet.plist, we need your password.",
+      ]

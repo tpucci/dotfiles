@@ -3,9 +3,15 @@
   "Valid modifiers are": ["option", "shift", "control", "command"],
   "mod1": ["control", "command"],
   "mod2": ["control", "shift", "command"],
-  "screens": 4,
-  "cycle-layout": {},
-  "cycle-layout-backward": {},
+  "screens": 2,
+  "cycle-layout": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
+  "cycle-layout-backward": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
   "select-tall-layout": {
     "mod": "mod1",
     "key": "t"
@@ -22,10 +28,22 @@
     "mod": "mod1",
     "key": "c"
   },
-  "focus-screen-1": {},
-  "focus-screen-2": {},
-  "focus-screen-3": {},
-  "focus-screen-4": {},
+  "focus-screen-1": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
+  "focus-screen-2": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
+  "focus-screen-3": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
+  "focus-screen-4": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
   "throw-screen-1": {
     "mod": "mod1",
     "key": "up"
@@ -34,8 +52,14 @@
     "mod": "mod1",
     "key": "down"
   },
-  "throw-screen-3": {},
-  "throw-screen-4": {},
+  "throw-screen-3": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
+  "throw-screen-4": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
   "shrink-main": {
     "mod": "mod1",
     "key": "-"
@@ -45,36 +69,40 @@
     "key": "="
   },
   "increase-main": {
-    "mod": "mod2",
-    "key": "="
+    "mod": "mod1",
+    "key": "disabled"
   },
   "decrease-main": {
-    "mod": "mod2",
-    "key": "-"
+    "mod": "mod1",
+    "key": "disabled"
   },
   "focus-ccw": {
     "mod": "mod1",
-    "key": "j"
+    "key": "disabled"
   },
   "focus-cw": {
     "mod": "mod1",
-    "key": "k"
+    "key": "disabled"
+  },
+  "focus-main": {
+    "mod": "mod1",
+    "key": "disabled"
   },
   "swap-screen-ccw": {
-    "mod": "mod2",
-    "key": "h"
+    "mod": "mod1",
+    "key": "disabled"
   },
   "swap-screen-cw": {
-    "mod": "mod2",
-    "key": "l"
+    "mod": "mod1",
+    "key": "disabled"
   },
   "swap-ccw": {
     "mod": "mod2",
-    "key": "j"
+    "key": "disabled"
   },
   "swap-cw": {
     "mod": "mod2",
-    "key": "k"
+    "key": "disabled"
   },
   "swap-main": {
     "mod": "mod1",
@@ -132,9 +160,21 @@
     "mod": "mod1",
     "key": "f"
   },
+  "toggle-tiling": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
+  "display-current-layout": {
+    "mod": "mod1",
+    "key": "disabled"
+  },
   "reevaluate-windows": {
     "mod": "mod1",
-    "key": "r"
+    "key": "disabled"
+  },
+  "toggle-focus-follows-mouse": {
+    "mod": "mod1",
+    "key": "disabled"
   },
   "floating": ["com.vivaldi.Vivaldi", "com.google.Chrome"],
   "floating-is-blacklist": false,
@@ -151,12 +191,10 @@
   "ignore-menu-bar": false,
   "use-canary-build": false,
   "new-windows-to-main": false,
-  "follow-space-thrown-windows": true,
   "send-crash-reports": false,
   "screen-padding-top": 0,
   "screen-padding-bottom": 0,
   "screen-padding-left": 0,
   "screen-padding-right": 0,
-  "debug-layout-info": false,
-  "restore-layouts-on-launch": true
+  "debug-layout-info": false
 }
