@@ -24,6 +24,8 @@
     ~/Library/Application Support/MTMR/items.json: mtmr/items.json
     # XCode
     ~/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings: xcode/Default.idekeybindings
+    # Bitbar
+    ~/.bitbarrc: bitbar/.bitbarrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
