@@ -1,3 +1,7 @@
+# Use commitizen to commit
+gcz() {
+  rust-commitizen
+}
 
 # Open a PR on Github with GPR
 gpr() {

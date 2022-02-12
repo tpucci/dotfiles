@@ -27,20 +27,23 @@ export PATH="$PATH:$HOME/.dotfiles/bin/phabricator/arcanist/bin" # phabricator
 export PATH="$PATH:$HOME/Library/terraform/bin" # terraform
 export PATH="$PATH:$HOME/Library/Python/3.7/bin" # python
 export PATH="$PATH:$HOME/.jenv/bin" # jenv
+export PATH="$PATH:$HOME/go/bin" # go
 export PATH="$PATH:/Library/TeX/texbin" # LaTeX
 
 # jenv
 eval "$(jenv init -)"
 
-# fnm
-eval "`fnm env --multi --use-on-cd`"
+# asdf
+. $(brew --prefix asdf)/libexec/asdf.sh
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
 
 typeset -U PATH # Remove duplicates in $PATH
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc'; fi
 

@@ -194,5 +194,10 @@
   {
     "key": "cmd+o",
     "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+alt+[Period]",
+    "command": "-gitlens.gitCommands",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
   }
 ]
