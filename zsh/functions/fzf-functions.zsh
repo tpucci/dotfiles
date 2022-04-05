@@ -70,6 +70,11 @@ fr() {
   git log --graph --color=always --format="%h%C(#ff69b4)%d%C(reset) %s" "$@" | fzf --ansi --reverse --tiebreak=index | grep -o '[a-f0-9]\{7\}' | awk '{print $1"^"}' | xargs git rebase -i
 }
 
+# frr - Select commit to reword
+frr() {
+  git log --graph --color=always --format="%h%C(#ff69b4)%d%C(reset) %s" "$@" | fzf --ansi --reverse --tiebreak=index | grep -o '[a-f0-9]\{7\}' | awk '{print $1"^"}' | xargs git rebase -x 'git commit --amend --verbose'
+}
+
 # yarn - get yarn commands
 _fzf_complete_yarn() {
   # Get all yarn commands

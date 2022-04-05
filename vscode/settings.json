@@ -33,13 +33,12 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.enableBell": true,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.validate.enable": false,
   "vim.disableExtension": true,
   "vim.enableNeovim": true,
-  "vim.neovimPath": "/usr/local/bin/nvim",
-  "workbench.activityBar.visible": false, // hide left icons
+  "vim.neovimPath": "/usr/local/bin/nvim", // hide left icons
   "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "left",
@@ -63,7 +62,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.confirmSync": false,
-  "languageToolLinter.serviceType": "public",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -77,5 +75,9 @@
   "editor.wordWrap": "off",
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  }
+  },
+  "workbench.colorCustomizations": {
+    "terminal.ansiBlack": "#5186f8"
+  },
+  "workbench.activityBar.visible": false
 }

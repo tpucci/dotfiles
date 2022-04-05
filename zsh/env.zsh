@@ -29,6 +29,7 @@ export PATH="$PATH:$HOME/Library/Python/3.7/bin" # python
 export PATH="$PATH:$HOME/.jenv/bin" # jenv
 export PATH="$PATH:$HOME/go/bin" # go
 export PATH="$PATH:/Library/TeX/texbin" # LaTeX
+export PATH="$PATH:/usr/local/opt/python@3.9/libexec/bin"
 
 # jenv
 eval "$(jenv init -)"
@@ -42,8 +43,8 @@ typeset -U PATH # Remove duplicates in $PATH
 
 
 # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-# if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc'; fi
 
