@@ -25,11 +25,9 @@ export PATH="$PATH:$HOME/.rvm/bin" #RVM
 export PATH="$PATH:$HOME/.ngrok/bin" # ngrok
 export PATH="$PATH:$HOME/.dotfiles/bin/phabricator/arcanist/bin" # phabricator
 export PATH="$PATH:$HOME/Library/terraform/bin" # terraform
-export PATH="$PATH:$HOME/Library/Python/3.7/bin" # python
 export PATH="$PATH:$HOME/.jenv/bin" # jenv
 export PATH="$PATH:$HOME/go/bin" # go
 export PATH="$PATH:/Library/TeX/texbin" # LaTeX
-export PATH="$PATH:/usr/local/opt/python@3.9/libexec/bin"
 
 # jenv
 eval "$(jenv init -)"
@@ -41,6 +39,7 @@ fpath=(${ASDF_DIR}/completions $fpath)
 
 typeset -U PATH # Remove duplicates in $PATH
 
+## COMPLETIONS
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
@@ -48,3 +47,5 @@ if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/U
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc'; fi
 
+# bun completions
+[ -s "/usr/local/share/zsh/site-functions/_bun" ] && source "/usr/local/share/zsh/site-functions/_bun"

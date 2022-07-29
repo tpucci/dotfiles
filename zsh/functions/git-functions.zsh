@@ -1,5 +1,5 @@
 # Use commitizen to commit
-gcz() {
+cz() {
   rust-commitizen
 }
 
@@ -48,7 +48,7 @@ gcl(){
   printf "${RED}WARNING${NC} ☢️  Are you sure you want to ${RED}clean${NC} your working directory? [y/n]\n"
   printf "${YELLOW}Ready to run:${NC} ❯ git reset --hard && git clean -fd ${YELLOW}Answer:${NC} "
   read choice
-  case "$choice" in 
+  case "$choice" in
     y|Y ) git reset --hard && git clean -fd;;
     * ) echo "\n⏹  Operation aborted\n";;
   esac

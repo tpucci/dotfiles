@@ -20,8 +20,6 @@
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
     # Git
     ~/.gitconfig: git/gitconfig
-    # My Touch Bar My Rules
-    ~/Library/Application Support/MTMR/items.json: mtmr/items.json
     # XCode
     ~/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings: xcode/Default.idekeybindings
 
