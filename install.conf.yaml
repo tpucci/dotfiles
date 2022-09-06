@@ -20,12 +20,6 @@
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
     # Git
     ~/.gitconfig: git/gitconfig
-    # XCode
-    ~/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings: xcode/Default.idekeybindings
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [
-        ./xcode/replaceIDETextKeyBindingSetPlist.sh,
-        "Replacing XCode's IDETextKeyBindingSet.plist, we need your password.",
-      ]
