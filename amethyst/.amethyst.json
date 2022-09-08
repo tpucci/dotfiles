@@ -158,7 +158,7 @@
   },
   "toggle-float": {
     "mod": "mod1",
-    "key": "f"
+    "key": "disabled"
   },
   "toggle-tiling": {
     "mod": "mod1",

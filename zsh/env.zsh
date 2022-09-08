@@ -31,12 +31,13 @@ export PATH="$PATH:/Library/TeX/texbin" # LaTeX
 
 # asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
-# append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
 
 typeset -U PATH # Remove duplicates in $PATH
 
 ## COMPLETIONS
+
+# The next lines enables autompletes for asdf
+export FPATH=(${ASDF_DIR}/completions $FPATH)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
