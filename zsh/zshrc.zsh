@@ -7,6 +7,7 @@ fi
 
 source ~/.zsh_plugins.sh # Load zsh plugins
 
+source ~/.dotfiles/zsh/plugins/gh.zsh
 source ~/.dotfiles/zsh/env.zsh
 
 source ~/.dotfiles/zsh/options.zsh
