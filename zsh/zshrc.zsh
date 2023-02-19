@@ -23,3 +23,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Fix asdf loading on non interactive terminals
+# See https://github.com/expo/expo/issues/17853#issuecomment-1426960576
+eval "$(/opt/homebrew/bin/brew shellenv)"

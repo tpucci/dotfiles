@@ -28,9 +28,15 @@ export PATH="$PATH:$HOME/.dotfiles/bin/phabricator/arcanist/bin" # phabricator
 export PATH="$PATH:$HOME/Library/terraform/bin" # terraform
 export PATH="$PATH:$HOME/go/bin" # go
 export PATH="$PATH:/Library/TeX/texbin" # LaTeX
+export PATH="$PATH:/Users/thomaspucci/.local/bin" # python local
+
 
 # asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
+# JAVA_HOME
+. ~/.asdf/plugins/java/set-java-home.zsh
+# flutter
+export FLUTTER_ROOT="$(asdf where flutter)"
 
 typeset -U PATH # Remove duplicates in $PATH
 

@@ -18,3 +18,4 @@ alias gti=git
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias ngrok="~/.dotfiles/bin/ngrok http -region=eu 80"
+alias cat="bat -p --paging=never"
