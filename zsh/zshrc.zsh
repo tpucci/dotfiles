@@ -27,3 +27,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Fix asdf loading on non interactive terminals
 # See https://github.com/expo/expo/issues/17853#issuecomment-1426960576
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/thomaspucci/.dart-cli-completion/zsh-config.zsh ]] && . /Users/thomaspucci/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]

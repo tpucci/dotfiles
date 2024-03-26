@@ -18,6 +18,9 @@
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
+    # Android Studio / IntelliJ
+    ~/Library/Application Support/Google/*/keymaps/dotfiles_keymap.xml: intellij/dotfiles_keymap.xml
+    ~/Library/Application Support/Jetbrains/*/keymaps/dotfiles_keymap.xml: intellij/dotfiles_keymap.xml
     # Git
     ~/.gitconfig: git/gitconfig
 

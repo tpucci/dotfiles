@@ -8,6 +8,17 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+google_dirs=$(find ~/Library/Application\ Support/Google -maxdepth 1 -type d)
+jetbrains_dirs=$(find ~/Library/Application\ Support/JetBrains -maxdepth 1 -type d)
+
+replacement=""
+for dir in $google_dirs $jetbrains_dirs; do
+    replacement+="${dir}/keymaps/dotfiles_keymap.xml: intellij/dotfiles_keymap.xml\n"
+done
+
+sed -i.bak '/# Android Studio \/ IntelliJ/,/#/{//!d}' install.conf.yaml
+sed -i.bak "/# Android Studio \/ IntelliJ/a\\$replacement" install.conf.yaml
+
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"

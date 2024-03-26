@@ -17,3 +17,7 @@ md(){
 ar(){
   adb shell input keyevent 82
 }
+
+idea(){
+  open -na "IntelliJ IDEA.app" --args "$@"
+}

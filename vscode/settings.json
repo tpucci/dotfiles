@@ -1,13 +1,28 @@
 {
-  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
-  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[markdown]": { "editor.defaultFormatter": "yzhang.markdown-all-in-one" },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[elixir]": { "editor.defaultFormatter": "JakeBecker.elixir-ls" },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
   "[phoenix-heex]": {
     "editor.defaultFormatter": "RoyalMist.vscode-eex-format"
   },
@@ -27,23 +42,21 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.codeActionsOnSave": {
-      "quickfix.insertSemicolon": true
+      "quickfix.insertSemicolon": "explicit"
     },
-
     // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
-    "editor.rulers": [80],
-
+    "editor.rulers": [
+      80
+    ],
     // Disables built-in highlighting of words that match your selection. Without
     // this, all instances of the selected text will be highlighted, interfering
     // with Dart's ability to highlight only exact references to the selected variable.
     "editor.selectionHighlight": false,
-
     // By default, VS Code prevents code completion from popping open when in
     // "snippet mode" (editing placeholders in inserted code). Setting this option
     // to `false` stops that and allows completion to open as normal, as if you
     // weren't in a snippet placeholder.
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-
     // By default, VS Code will pre-select the most recently used item from code
     // completion. This is usually not the most relevant item.
     //
@@ -51,23 +64,28 @@
     // "recentlyUsedByPrefix" will filter the recently used items based on the
     //     text immediately preceding where completion was invoked.
     "editor.suggestSelection": "first",
-
     // Allows pressing <TAB> to complete snippets such as `for` even when the
     // completion list is not visible.
-    "editor.tabCompletion": "onlySnippets",
-
+    "editor.tabCompletion": "off",
     // By default, VS Code will populate code completion with words found in the
     // current file when a language service does not provide its own completions.
     // This results in code completion suggesting words when editing comments and
     // strings. This setting will prevent that.
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off",
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
   "breadcrumbs.enabled": true,
   "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "docked",
   "debug.openDebug": "openOnDebugBreak",
-  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.removeUnusedImports",
+  ],
   "editor.cursorStyle": "line",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -76,24 +94,23 @@
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
+  "editor.stickyScroll.enabled": true,
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
-  "elixirLS.dialyzerEnabled": false,
-  "elixirLS.fetchDeps": false,
-  "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
     "phoenix-heex": "html"
   },
   "explorer.confirmDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
     "Fastfile": "ruby",
     ".arclint": "json",
     "*.leex": "phoenix-heex",
-    "*.heex": "phoenix-heex"
+    "*.heex": "phoenix-heex",
+    ".env*": "dotenv"
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -127,6 +144,7 @@
   "javascript.format.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
+  "languageTool.language": "fr",
   "liveshare.featureSet": "insiders",
   "redhat.telemetry.enabled": false,
   "tailwindCSS.includeLanguages": {
@@ -135,7 +153,6 @@
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.enableBell": true,
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.validate.enable": true,
@@ -143,25 +160,46 @@
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim", // hide left icons
   "vsicons.dontShowNewVersionMessage": true,
-  "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.colorCustomizations": {
-    "editor.functionForeground": "ff0000",
-    "statusBar.background": "#252526",
+    "editor.functionForeground": "#ff0000",
+    "statusBar.background": "#263238",
     "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238"
+    "statusBar.debuggingBackground": "#263238",
+    "tab.activeBackground": "#121212",
+    "tab.activeBorder": "#5da3ff",
   },
-  "workbench.editor.showTabs": true,
-  "workbench.editorAssociations": { "*.ipynb": "jupyter.notebook.ipynb" },
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "workbench.iconTheme": "vscode-icons",
-  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.fullScreen": false,
   "zenMode.hideActivityBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
-  "workbench.layoutControl.enabled": false,
   "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
     "textMateRules": [
       {
         "scope": "keyword.other.dotenv",
@@ -173,5 +211,49 @@
   },
   "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
-  "git.openRepositoryInParentFolders": "always"
+  "git.openRepositoryInParentFolders": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.colorTheme": "Default Dark+",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command",
+    "stash-push:command"
+  ],
+  "rubyLsp.rubyVersionManager": "asdf",
+  "rubyLsp.formatter": "auto",
+  "editor.hideCursorInOverviewRuler": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.languages.allowGuestCommandControl": true,
+  "terminal.integrated.inheritEnv": true,
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": [
+        "-l",
+        "-i"
+      ]
+    }
+  },
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.launcherClient": "visualStudioCode",
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true,
+  "editor.accessibilitySupport": "off"
 }

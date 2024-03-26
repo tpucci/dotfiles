@@ -199,5 +199,59 @@
     "key": "shift+alt+[Period]",
     "command": "-gitlens.gitCommands",
     "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "ctrl+alt+cmd+i",
+    "command": "typescript.removeUnusedImports"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "alt+r",
+    "command": "editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.debug.action.focusVariablesView"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "workbench.extensions.action.focusExtensionsView"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "copyRelativeFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "-gitlens.showQuickCommitFileDetails",
+    "when": "editorTextFocus && !gitlens:disabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "cmd+y",
+    "command": "dart.goToTestOrImplementationFile"
+  },
+  {
+    "key": "ctrl+alt+cmd+t",
+    "command": "todo-tree-view.focus"
   }
 ]

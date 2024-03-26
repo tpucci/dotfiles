@@ -29,21 +29,28 @@ export PATH="$PATH:$HOME/Library/terraform/bin" # terraform
 export PATH="$PATH:$HOME/go/bin" # go
 export PATH="$PATH:/Library/TeX/texbin" # LaTeX
 export PATH="$PATH:/Users/thomaspucci/.local/bin" # python local
+export PATH="$PATH":"$HOME/.pub-cache/bin" # Dart pub global packages
+export PATH="$PATH":"$HOME/google-cloud-sdk/bin" # gcloud
 
 
-# asdf
+## ASDF
 . $(brew --prefix asdf)/libexec/asdf.sh
 # JAVA_HOME
 . ~/.asdf/plugins/java/set-java-home.zsh
-# flutter
+# FLUTTER
 export FLUTTER_ROOT="$(asdf where flutter)"
+export FLUTTER_HOME="$(asdf where flutter)"
+# GOLANG
+export ASDF_GOLANG_OVERWRITE_ARCH="amd64"
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
+. ~/.asdf/plugins/golang/set-env.zsh
 
 typeset -U PATH # Remove duplicates in $PATH
 
 ## COMPLETIONS
 
 # The next lines enables autompletes for asdf
-export FPATH=(${ASDF_DIR}/completions $FPATH)
+export FPATH="$ASDF_DIR/completions:$FPATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi
@@ -53,3 +60,7 @@ if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/completion.zsh.inc' ]; then
 
 # bun completions
 [ -s "/usr/local/share/zsh/site-functions/_bun" ] && source "/usr/local/share/zsh/site-functions/_bun"
+
+## Dart cli completions
+if [ -f /Users/thomaspucci/.dart-cli-completion/zsh-config.zsh ]; then . '/Users/thomaspucci/.dart-cli-completion/zsh-config.zsh'; fi
+
