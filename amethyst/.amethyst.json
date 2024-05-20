@@ -1,12 +1,12 @@
 {
-  "layouts": ["tall", "wide", "fullscreen", "column"],
+  "layouts": ["tall", "fullscreen", "column"],
   "Valid modifiers are": ["option", "shift", "control", "command"],
   "mod1": ["control", "command"],
   "mod2": ["control", "shift", "command"],
   "screens": 2,
   "cycle-layout": {
     "mod": "mod1",
-    "key": "disabled"
+    "key": "t"
   },
   "cycle-layout-backward": {
     "mod": "mod1",
@@ -14,19 +14,19 @@
   },
   "select-tall-layout": {
     "mod": "mod1",
-    "key": "t"
+    "key": "disabled"
   },
   "select-wide-layout": {
     "mod": "mod1",
-    "key": "w"
+    "key": "disabled"
   },
   "select-fullscreen-layout": {
     "mod": "mod1",
-    "key": "m"
+    "key": "disabled"
   },
   "select-column-layout": {
     "mod": "mod1",
-    "key": "c"
+    "key": "disabled"
   },
   "focus-screen-1": {
     "mod": "mod1",
@@ -176,7 +176,7 @@
     "mod": "mod1",
     "key": "disabled"
   },
-  "floating": ["com.vivaldi.Vivaldi", "com.google.Chrome"],
+  "floating": ["com.google.Chrome"],
   "floating-is-blacklist": false,
   "float-small-windows": true,
   "mouse-follows-focus": false,
