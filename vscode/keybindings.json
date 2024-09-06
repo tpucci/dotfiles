@@ -253,5 +253,9 @@
   {
     "key": "ctrl+alt+cmd+t",
     "command": "todo-tree-view.focus"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "outline.focus"
   }
 ]

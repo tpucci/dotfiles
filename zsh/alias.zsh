@@ -17,6 +17,6 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias gti=git
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias ngrok="~/.dotfiles/bin/ngrok http -region=eu 80"
+alias ngrok="~/.dotfiles/bin/ngrok"
 alias cat="bat -p --paging=never"
 alias pn="pnpm"

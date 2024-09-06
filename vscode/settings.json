@@ -71,12 +71,11 @@
     // current file when a language service does not provide its own completions.
     // This results in code completion suggesting words when editing comments and
     // strings. This setting will prevent that.
-    "editor.wordBasedSuggestions": "off",
+    "editor.wordBasedSuggestions": "off"
   },
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
-  "breadcrumbs.enabled": true,
   "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "docked",
@@ -84,7 +83,7 @@
   "editor.codeActionsOnSave": [
     "source.addMissingImports",
     "source.organizeImports",
-    "source.removeUnusedImports",
+    "source.removeUnusedImports"
   ],
   "editor.cursorStyle": "line",
   "editor.fontFamily": "Fira Code",
@@ -94,7 +93,7 @@
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
-  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -161,13 +160,36 @@
   "vim.neovimPath": "/usr/local/bin/nvim", // hide left icons
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.statusBar.visible": true,
+  "breadcrumbs.filePath": "on",
+  "outline.showArrays": false,
+  "outline.showBooleans": false,
+  "outline.showConstants": false,
+  "outline.showEnumMembers": false,
+  "outline.showEnums": false,
+  "outline.showKeys": false,
+  "outline.showNull": false,
+  "outline.showNumbers": false,
+  "outline.showObjects": false,
+  "outline.showStrings": false,
+  "outline.showVariables": false,
+  "outline.showStructs": false,
+  "outline.showEvents": false,
+  "outline.showOperators": false,
+  "outline.showProperties": false,
+  "outline.showTypeParameters": false,
+  "outline.show": false,
   "workbench.colorCustomizations": {
     "editor.functionForeground": "#ff0000",
-    "statusBar.background": "#263238",
+    "statusBar.background": "#6b21a8",
     "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238",
-    "tab.activeBackground": "#121212",
-    "tab.activeBorder": "#5da3ff",
+    "statusBar.debuggingBackground": "#16a34a",
+    "tab.activeBackground": "#1e1e1e",
+    "tab.activeBorder": "#9333ea",
+    "breadcrumb.background": "#1e1e1e",
+    "focusBorder": "#9333ea",
+    "list.activeSelectionBackground": "#3b0764",
+    "editorGroupHeader.tabsBackground": "#333333",
+    "button.background": "#9333ea"
   },
   "workbench.editor.showTabs": "multiple",
   "workbench.editorAssociations": {
@@ -209,14 +231,13 @@
       }
     ]
   },
-  "dart.debugExternalPackageLibraries": false,
+  "dart.debugExternalPackageLibraries": true,
   "dart.debugSdkLibraries": false,
   "git.openRepositoryInParentFolders": "always",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.inlineSuggest.enabled": true,
-  "workbench.colorTheme": "Default Dark+",
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -231,7 +252,9 @@
     "switch:command",
     "stash-push:command"
   ],
-  "rubyLsp.rubyVersionManager": "asdf",
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "asdf"
+  },
   "rubyLsp.formatter": "auto",
   "editor.hideCursorInOverviewRuler": true,
   "[yaml]": {
@@ -255,5 +278,7 @@
     "sound": "on"
   },
   "terminal.integrated.enableVisualBell": true,
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.colorTheme": "Default Dark+"
 }
