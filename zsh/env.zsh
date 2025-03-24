@@ -18,7 +18,7 @@ export LANG=en_US.UTF-8 # Fastlane config
 export FASTLANE_HIDE_CHANGELOG=true # Fastlane config
 
 # Path
-export PATH="$PATH:/opt/homebrew/bin" # Homebrew for Apple chips
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools" # Android
 export PATH="$PATH:$HOME/Library/Android/sdk/tools" # Android
 export PATH="$PATH:$HOME/Library/Flutter/bin" # Flutter
@@ -31,10 +31,8 @@ export PATH="$PATH:/Library/TeX/texbin" # LaTeX
 export PATH="$PATH:/Users/thomaspucci/.local/bin" # python local
 export PATH="$PATH":"$HOME/.pub-cache/bin" # Dart pub global packages
 export PATH="$PATH":"$HOME/google-cloud-sdk/bin" # gcloud
+export PATH="$PATH:/opt/homebrew/bin" # Homebrew for Apple chips
 
-
-## ASDF
-. $(brew --prefix asdf)/libexec/asdf.sh
 # JAVA_HOME
 . ~/.asdf/plugins/java/set-java-home.zsh
 # FLUTTER
@@ -44,13 +42,13 @@ export FLUTTER_HOME="$(asdf where flutter)"
 export ASDF_GOLANG_OVERWRITE_ARCH="amd64"
 export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 . ~/.asdf/plugins/golang/set-env.zsh
+# ZSH_CODEX
+export ZSH_CODEX_PYTHON="$(asdf where python)/bin/python"
+export ZSH_CODEX_PREEXECUTE_COMMENT="true"
 
 typeset -U PATH # Remove duplicates in $PATH
 
 ## COMPLETIONS
-
-# The next lines enables autompletes for asdf
-export FPATH="$ASDF_DIR/completions:$FPATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomaspucci/Library/google-cloud-sdk/path.zsh.inc'; fi

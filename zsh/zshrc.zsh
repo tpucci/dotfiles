@@ -7,7 +7,6 @@ fi
 
 source ~/.zsh_plugins.sh # Load zsh plugins
 
-source ~/.dotfiles/zsh/plugins/gh.zsh
 source ~/.dotfiles/zsh/env.zsh
 
 source ~/.dotfiles/zsh/options.zsh
@@ -15,7 +14,6 @@ source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/functions/fzf-functions.zsh
 source ~/.dotfiles/zsh/functions/git-functions.zsh
 source ~/.dotfiles/zsh/functions/fzf-docker-kubetcl.zsh
-source ~/.dotfiles/zsh/functions/fzf-arc-functions.zsh
 source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/private.zsh
 
@@ -28,7 +26,18 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # See https://github.com/expo/expo/issues/17853#issuecomment-1426960576
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Fix asdf autocompletion
+# See https://github.com/asdf-vm/asdf/issues/2035#issuecomment-2747087158
+autoload -Uz _asdf && compdef _asdf asdf
+
+
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/thomaspucci/.dart-cli-completion/zsh-config.zsh ]] && . /Users/thomaspucci/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
+
+# Hook direnv
+eval "$(direnv hook zsh)"
+
+# zsh_codex
+bindkey '^X' create_completion

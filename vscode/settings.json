@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -42,7 +42,8 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.codeActionsOnSave": {
-      "quickfix.insertSemicolon": "explicit"
+      "quickfix.insertSemicolon": "explicit",
+      "source.fixAll": "explicit",
     },
     // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
     "editor.rulers": [
@@ -83,7 +84,7 @@
   "editor.codeActionsOnSave": [
     "source.addMissingImports",
     "source.organizeImports",
-    "source.removeUnusedImports"
+    "source.removeUnusedImports",
   ],
   "editor.cursorStyle": "line",
   "editor.fontFamily": "Fira Code",
@@ -101,6 +102,7 @@
   "emmet.includeLanguages": {
     "phoenix-heex": "html"
   },
+  "eslint.lintTask.enable": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 1,
   "extensions.ignoreRecommendations": false,
@@ -222,14 +224,7 @@
         }
       ]
     },
-    "textMateRules": [
-      {
-        "scope": "keyword.other.dotenv",
-        "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
+    "textMateRules": []
   },
   "dart.debugExternalPackageLibraries": true,
   "dart.debugSdkLibraries": false,
@@ -280,5 +275,12 @@
   "terminal.integrated.enableVisualBell": true,
   "editor.accessibilitySupport": "off",
   "github.copilot.editor.enableAutoCompletions": true,
-  "workbench.colorTheme": "Default Dark+"
+  "workbench.colorTheme": "Default Dark+",
+  "dotenv.enableAutocloaking": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -257,5 +257,10 @@
   {
     "key": "cmd+[Period]",
     "command": "outline.focus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   }
 ]

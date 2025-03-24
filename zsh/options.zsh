@@ -10,6 +10,7 @@ setopt share_history # Share history across terminals
 setopt inc_append_history # Immediately append to the history file, not just when a term is killed
 setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
+setopt interactivecomments # Allow comments in interactive mode
 
 # History
 HISTSIZE=10000 # Lines of history to keep in memory for current session

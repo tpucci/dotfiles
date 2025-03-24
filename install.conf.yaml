@@ -23,6 +23,8 @@
     ~/Library/Application Support/Jetbrains/*/keymaps/dotfiles_keymap.xml: intellij/dotfiles_keymap.xml
     # Git
     ~/.gitconfig: git/gitconfig
+    # zsh_codex
+    ~/.config/zsh_codex.ini: zsh/plugins/zsh_codex.ini
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
