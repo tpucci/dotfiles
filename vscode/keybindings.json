@@ -201,10 +201,6 @@
     "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
   },
   {
-    "key": "ctrl+alt+cmd+i",
-    "command": "typescript.removeUnusedImports"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "-workbench.action.terminal.openNativeConsole",
     "when": "!terminalFocus"
@@ -262,5 +258,53 @@
     "key": "cmd+i",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+alt+cmd+g",
+    "command": "pr:github.focus"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f7",
+    "command": "editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f8",
+    "command": "go-to-next-error.nextInFiles.warning",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+f8",
+    "command": "-editor.action.marker.prevInFiles",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+f7",
+    "command": "editor.action.marker.prevInFiles",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+f8",
+    "command": "go-to-next-error.prevInFiles.warning",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "git.commitMessageAccept",
+    "when": "editorFocus && resourceFilename == 'COMMIT_EDITMSG'"
+  },
+  {
+    "key": "ctrl+alt+cmd+i",
+    "command": "claude-vscode.sidebar.open"
+  },
+  {
+    "key": "cmd+y",
+    "command": "-chatEditor.action.acceptHunk",
+    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isCurrentlyBeingModified"
   }
 ]

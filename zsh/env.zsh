@@ -32,6 +32,7 @@ export PATH="$PATH:/Users/thomaspucci/.local/bin" # python local
 export PATH="$PATH":"$HOME/.pub-cache/bin" # Dart pub global packages
 export PATH="$PATH":"$HOME/google-cloud-sdk/bin" # gcloud
 export PATH="$PATH:/opt/homebrew/bin" # Homebrew for Apple chips
+export PATH="$PATH:$(asdf where rust)/bin" # Rust bin
 
 # JAVA_HOME
 . ~/.asdf/plugins/java/set-java-home.zsh

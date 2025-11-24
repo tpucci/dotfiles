@@ -43,6 +43,7 @@
     "editor.formatOnType": true,
     "editor.codeActionsOnSave": {
       "quickfix.insertSemicolon": "explicit",
+      "source.organizeImports": "explicit",
       "source.fixAll": "explicit",
     },
     // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
@@ -77,6 +78,8 @@
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp"
   },
+  "dart.runPubGetOnPubspecChanges": "prompt",
+  "chat.agent.enabled": true,
   "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "docked",
@@ -92,9 +95,7 @@
   "editor.formatOnSave": true,
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
-  "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
-  "editor.stickyScroll.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -105,7 +106,7 @@
   "eslint.lintTask.enable": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 1,
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "files.associations": {
     "Fastfile": "ruby",
     ".arclint": "json",
@@ -154,6 +155,7 @@
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.validate.enable": true,
@@ -179,7 +181,6 @@
   "outline.showOperators": false,
   "outline.showProperties": false,
   "outline.showTypeParameters": false,
-  "outline.show": false,
   "workbench.colorCustomizations": {
     "editor.functionForeground": "#ff0000",
     "statusBar.background": "#6b21a8",
@@ -191,7 +192,19 @@
     "focusBorder": "#9333ea",
     "list.activeSelectionBackground": "#3b0764",
     "editorGroupHeader.tabsBackground": "#333333",
-    "button.background": "#9333ea"
+    "button.background": "#9333ea",
+    "[*Light*][AnotherTheme]": {
+      "statusBar.background": "#c084fc",
+      "statusBar.noFolderBackground": "#e5e5e5",
+      "statusBar.debuggingBackground": "#4ade80",
+      "tab.activeBackground": "#ffffff",
+      "tab.activeBorder": "#a855f7",
+      "breadcrumb.background": "#f9fafb",
+      "focusBorder": "#a855f7",
+      "list.activeSelectionBackground": "#a855f7",
+      "editorGroupHeader.tabsBackground": "#f3f4f6",
+      "button.background": "#a855f7",
+    }
   },
   "workbench.editor.showTabs": "multiple",
   "workbench.editorAssociations": {
@@ -226,7 +239,7 @@
     },
     "textMateRules": []
   },
-  "dart.debugExternalPackageLibraries": true,
+  "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
   "git.openRepositoryInParentFolders": "always",
   "[javascript]": {
@@ -275,12 +288,63 @@
   "terminal.integrated.enableVisualBell": true,
   "editor.accessibilitySupport": "off",
   "github.copilot.editor.enableAutoCompletions": true,
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default Light+",
   "dotenv.enableAutocloaking": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[graphql]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "githubPullRequests.fileListLayout": "tree",
+  "mcp": {
+    "inputs": [
+      {
+        "type": "promptString",
+        "id": "github_token",
+        "description": "GitHub Personal Access Token",
+        "password": true
+      }
+    ],
+    "servers": {
+      // "github_perso": {
+      //   "command": "docker",
+      //   "args": [
+      //     "run",
+      //     "-i",
+      //     "--rm",
+      //     "-e",
+      //     "GITHUB_PERSONAL_ACCESS_TOKEN",
+      //     "ghcr.io/github/github-mcp-server"
+      //   ],
+      //   "env": {
+      //     "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+      //   }
+      // }
+    }
+  },
+  "dart.devToolsLocation": {
+    "default": "active",
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.statusBarItem.enabled": true,
+  "chat.mcp.gallery.enabled": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "docker.extension.dockerEngineAvailabilityPrompt": false
 }
