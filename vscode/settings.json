@@ -346,5 +346,6 @@
   "git.blame.statusBarItem.enabled": true,
   "chat.mcp.gallery.enabled": true,
   "docker.extension.enableComposeLanguageServer": false,
-  "docker.extension.dockerEngineAvailabilityPrompt": false
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "claudeCode.preferredLocation": "sidebar"
 }
